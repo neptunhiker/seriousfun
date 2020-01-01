@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>seriousfun</title>
+    <title>BeginnerLuft Timesheet</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -11,9 +11,38 @@
 
 
 
+<div class="input">   
+	<a href="https://www.beginnerluft.de" target="_blank">
+		<img src="images/BL logo schwarz.png" alt="BeginnerLuft Logo">
+	</a>
+	<span id="timesheet">Timesheet</span>
 
-    <!-- jQuery (Bootstrap JS plugin depend on it) -->
+	<p class="normalheader">Coach</p>
+	<input type="text" id="input-a"/>  
+
+	<p class="normalheader">Klient</p>
+	<input type="text" id="input-b"/>  
+
+	<p class="normalheader">Datum</p>
+	<input type="date" id="datepicker"/>  
+
+	<p class="normalheader">Modul</p>
+	<select name="modules" selected="modul02">
+		<option value="modul01">Modul 1: Bewerbungsmanagement</option>
+		<option value="modul02">Modul 2: Bewerbungsmanagement</option>
+		<option value="modul03">Modul 3: Bewerbungsmanagement</option>
+		<option value="modul04">Modul 4: Bewerbungsmanagement</option>
+	</select>
+
+	<p class="normalheader">Kommentar</p>
+	<textarea>Bitte Inhalte des Coachings kurz und knapp beschreiben.</textarea>
+
+	<button id="submit"/>Senden</button>
+</div>
+
+	<!-- jQuery (Bootstrap JS plugin depend on it) -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
