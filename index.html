@@ -19,10 +19,10 @@
 	<span id="timesheet">Timesheet</span>
 
 	<p class="normalheader">Coach</p>
-	<input type="text" id="input-a"/>  
+	<input type="text" id="coach"/>  
 
 	<p class="normalheader">Klient</p>
-	<input type="text" id="input-b"/>  
+	<input type="text" id="client"/>  
 
 	<p class="normalheader">Datum</p>
 	<input type="date" id="datepicker"/>  
@@ -51,9 +51,10 @@
 	</select>
 
 	<p class="normalheader">Kommentar</p>
-	<textarea>Bitte Inhalte des Coachings kurz und knapp beschreiben.</textarea>
+	<textarea id="commentary">Bitte Inhalte des Coachings kurz und knapp beschreiben.</textarea>
 
 	<button id="submit"/>Senden</button>
+	<div id="successmessage"></div>
 </div>
 
 	<!-- jQuery (Bootstrap JS plugin depend on it) -->

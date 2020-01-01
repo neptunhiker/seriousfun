@@ -147,10 +147,8 @@ button:active {
 	font-weight: bold;
 }
 
-  .tooltipclass + .tooltip > .tooltip-inner {
-    background-color: red; 
-    color: #FFFFFF; 
-    border: 1px solid green; 
-    padding: 15px;
-    font-size: 20px;
-  }
+#successmessage {
+	text-align: center;
+	color: green;
+	margin-bottom: 10px;
+}

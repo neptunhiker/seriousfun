@@ -1,27 +1,32 @@
 $(function() {
-	  $('[data-toggle="tooltip"]').tooltip();  
-});
 
+	var commentary_msg = "Bitte Inhalte des Coachings kurz und knapp beschreiben.";
 
-$(document).on("focusout", "textarea", function(){
+	$('[data-toggle="tooltip"]').tooltip();  
 
-	if ($(this).val() == "") {
-		$(this).val("Bitte Inhalte des Coachings kurz und knapp beschreiben.");
-	}
-})
+	$("#submit").click(function() {
+		// check whether fields have been filled out
+		$("#commentary").val(commentary_msg); 
+		$("#successmessage").text("Daten erfolgreich gespeichert");
+	  })
 
-$(document).on("focusin", "textarea", function(){
+	$(document).on("focusout", "textarea", function(){
 
-	if ($(this).val() == "Bitte Inhalte des Coachings kurz und knapp beschreiben.") {
-		$(this).val("");
-	}
+		if ($(this).val() == "") {
+			$(this).val(commentary_msg);
+		}
+	})
 
-	// if (($(this).val() === "") && ($(this).next().hasClass("normalinput"))) {
-	// 	$(this).next().css({"top": "-75px",
-	// 					"font-size": "1.5em",
-	// 					"transition": "all .2s",
-	// 					"font-style": "italic",
-	// 					"color": "black"});
-	// }
+	$(document).on("focusin", "textarea", function(){
+
+		if ($(this).val() == commentary_msg) {
+			$(this).val("");
+		}
+	})
+
+   	$('input, textarea').change(function() { 
+        $("#successmessage").text(""); 
+   }); 
+
 })
 
