@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>BeginnerLuft Timesheet</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -26,8 +27,16 @@
 	<p class="normalheader">Datum</p>
 	<input type="date" id="datepicker"/>  
 
-	<p class="normalheader">Uhrzeit</p>
+	<p class="normalheader">Beginn</p>
 	<input type="time"/>  
+
+	<p class="normalheader">Anzahl an Unterrichtseinheiten</p>
+	<select name="modules" selected="modul02">
+		<option value="UE1">1</option>
+		<option value="UE2">2</option>
+		<option value="UE3">3</option>
+		<option value="UE4">4</option>
+	</select>
 
 	<p class="normalheader">Modul</p>
 	<select name="modules" selected="modul02">
@@ -48,7 +57,7 @@
 </div>
 
 	<!-- jQuery (Bootstrap JS plugin depend on it) -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>

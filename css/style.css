@@ -132,3 +132,25 @@ button:hover {
 	color: black;
 	font-weight: bold;
 }
+
+button:focus {
+	outline: none;
+}
+
+button:active {
+	position: relative;
+	top: 1px;
+	left: 2px;
+	box-shadow: 1px 1px  2px 1px grey;
+	background-color: var(--bl-yellow);
+	color: black;
+	font-weight: bold;
+}
+
+  .tooltipclass + .tooltip > .tooltip-inner {
+    background-color: red; 
+    color: #FFFFFF; 
+    border: 1px solid green; 
+    padding: 15px;
+    font-size: 20px;
+  }

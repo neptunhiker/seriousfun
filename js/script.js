@@ -1,8 +1,6 @@
-// $(function() {
-// 	function labelfocusout () {
-// 		alert("hih");
-// 	}
-// });
+$(function() {
+	  $('[data-toggle="tooltip"]').tooltip();  
+});
 
 
 $(document).on("focusout", "textarea", function(){
